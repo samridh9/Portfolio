@@ -10,7 +10,11 @@
   console.log("Google Analytics loaded");
 </script>
 
-<meta charset="UTF-8" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Samridh Singh | Portfolio</title>
+
   <!-- SEO Meta Tags -->
   <meta name="description" content="Samridh Singh's personal portfolio website. Full-stack developer, machine learning enthusiast, and computer science student." />
   <meta name="keywords" content="Samridh Singh, portfolio, full-stack developer, web development, machine learning, computer science" />
@@ -35,6 +39,17 @@
   {
     "@context": "https://schema.org",
     "@type": "Person",
+    "name": "Samridh Singh",
+    "jobTitle": "Full-Stack Developer",
+    "url": "http://127.0.0.1:5500/",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "MITE, Karnataka"
+    },
+    "sameAs": [
+      "https://linkedin.com/in/samridhsingh9",
+      "https://github.com/samridh9"
+    ],
     "hasCredential": [
       {
         "@type": "EducationalOccupationalCredential",
@@ -60,50 +75,31 @@
         "name": "R Programming Workshop"
       }
     ],
-
-    "name": "Samridh Singh",
-    "url": "http://127.0.0.1:5500/",
-    "sameAs": [
-      "https://linkedin.com/in/samridhsingh9",
-      "https://github.com/samridh9"
-    ],
-    "jobTitle": "Full-Stack Developer",
-    "alumniOf": {
-      "@type": "CollegeOrUniversity",
-      "name": "MITE, Karnataka"
-    },
     "hasPart": [
       {
         "@type": "CreativeWork",
         "name": "Early Depression Detection",
-        "url": "https://github.com/samridh9/Early-Depression-Detection-using-Machine-Learning",
-        "description": "NLP tool using NLTK and Scikit-learn with 85% accuracy, deployed via Streamlit."
+        "url": "https://github.com/samridh9/Early-Depression-Detection-using-Machine-Learning"
       },
       {
         "@type": "CreativeWork",
         "name": "House Price Prediction",
-        "url": "https://github.com/samridh9/House-Price-Prediction",
-        "description": "Real estate forecasting app using Gradient Boosting and data visualization in Seaborn."
+        "url": "https://github.com/samridh9/House-Price-Prediction"
       }
-    ],
-    "knowsAbout": [
-      "Full-Stack Development",
-      "Machine Learning",
-      "JavaScript",
-      "Python"
     ]
   }
   </script>
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="assets/favicon.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Samridh Singh | Portfolio</title>
+
+  <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
 </head>
+
 <body>
   <header>
     <nav>
@@ -112,6 +108,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><a href="Samridh_Singh_Resume.pdf" download>Resume</a></li>
         <li><button id="theme-toggle">🌙</button></li>
@@ -121,9 +118,9 @@
 
   <section id="hero" data-aos="fade-up">
     <div class="hero-content">
-      <img src="./assets/profile.jpg" alt="Samridh Singh" />
+      <img src="assets/profile.jpg" alt="Samridh Singh" />
       <div>
-        <h2>Hello, I'm <span>Samridh Singh</span> 👋</h2>
+        <h2><span class="typed-text"></span><span class="cursor">|</span></h2>
         <p>Aspiring Full-Stack Developer & Tech Enthusiast from India.</p>
         <p>Currently pursuing B.E. in Computer Science & Engineering.</p>
         <a href="#contact" class="btn">Let's Connect</a>
@@ -171,53 +168,39 @@
   </section>
 
   <section id="experience" data-aos="fade-up">
-  <h2>Experience</h2>
-  <div class="timeline">
-    <div class="timeline-item">
-      <span class="date">February 2025 – June 2025</span>
-      <div class="content">
-        <h3>Mphasis – Trainee Engineer Intern</h3>
-        <p>Worked under the Metageeks program with a focus on core training and real-world IT applications.</p>
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <span class="date">February 2025 – June 2025</span>
+        <div class="content">
+          <h3>Mphasis – Trainee Engineer Intern</h3>
+          <p>Worked under the Metageeks program with a focus on core training and real-world IT applications.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <span class="date">November 2023</span>
+        <div class="content">
+          <h3>Zinnov – Market Research Intern</h3>
+          <p>Contributed to industry research and insights during a 4-week data-focused internship.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <span class="date">2021–2025</span>
+        <div class="content">
+          <h3>B.E. in Computer Science – MITE</h3>
+          <p>Pursuing degree with a CGPA of 8.53. Key interests include full-stack development and machine learning.</p>
+        </div>
       </div>
     </div>
-    <div class="timeline-item">
-      <span class="date">November 2023</span>
-      <div class="content">
-        <h3>Zinnov – Market Research Intern</h3>
-        <p>Contributed to industry research and insights during a 4-week data-focused internship.</p>
-      </div>
-    </div>
-    <div class="timeline-item">
-      <span class="date">2021–2025</span>
-      <div class="content">
-        <h3>B.E. in Computer Science – MITE</h3>
-        <p>Pursuing degree with a CGPA of 8.53. Key interests include full-stack development and machine learning.</p>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
 
-<section id="certifications" data-aos="fade-up">
+  <section id="certifications" data-aos="fade-up">
     <h2>Certifications</h2>
     <ul class="cert-list">
-      <li>
-        <a href="https://smartinternz.com/internships/salesforce_certificates/4e439d35ea31f8d8d543325ea09d53f6" target="_blank">
-          🛠 Salesforce Developer – SmartInternz
-        </a>
-      </li>
-      <li>
-        <a href="https://www.coursera.org/account/accomplishments/specialization/QWW4Q2VXAM6C" target="_blank">
-          📘 Google IT Automation – Coursera
-        </a>
-      </li>
-      <li>
-        <a href="https://www.coursera.org/account/accomplishments/specialization/53LX8LC568EH" target="_blank">
-          📊 Google Project Management – Coursera
-        </a>
-      </li>
-      <li>
-        🎓 R Programming Workshop
-      </li>
+      <li><a href="https://smartinternz.com/internships/salesforce_certificates/4e439d35ea31f8d8d543325ea09d53f6" target="_blank">🛠 Salesforce Developer – SmartInternz</a></li>
+      <li><a href="https://www.coursera.org/account/accomplishments/specialization/QWW4Q2VXAM6C" target="_blank">📘 Google IT Automation – Coursera</a></li>
+      <li><a href="https://www.coursera.org/account/accomplishments/specialization/53LX8LC568EH" target="_blank">📊 Google Project Management – Coursera</a></li>
+      <li>🎓 R Programming Workshop</li>
     </ul>
   </section>
 
@@ -238,6 +221,9 @@
       <a href="https://github.com/samridh9" target="_blank">GitHub</a></p>
   </section>
 
+  <button id="backToTop" title="Back to Top">↑</button>
+
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
@@ -259,47 +245,52 @@
       localStorage.setItem("theme", next);
     });
 
+    // Contact form submission
     const form = document.getElementById("contact-form");
     const status = document.getElementById("form-status");
-
     form.addEventListener("submit", async (e) => {
       e.preventDefault();
       const name = document.getElementById("name").value.trim();
       const email = document.getElementById("email").value.trim();
       const message = document.getElementById("message").value.trim();
-
       status.textContent = "Sending...";
-
       try {
         const response = await fetch("http://localhost:5000/contact", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ name, email, message }),
         });
-
         const result = await response.json();
         status.textContent = result.message;
-
         if (response.ok) form.reset();
       } catch (error) {
         console.error("Error:", error);
         status.textContent = "Failed to send message.";
       }
     });
-  </script>
-<button id="backToTop" title="Back to Top">↑</button>
-<script>
-  const backToTop = document.getElementById("backToTop");
-  window.addEventListener("scroll", () => {
-    if (window.scrollY > 300) {
-      backToTop.classList.add("show");
-    } else {
-      backToTop.classList.remove("show");
+
+    // Typing animation
+    const typedText = document.querySelector(".typed-text");
+    const text = "Hello, I'm Samridh Singh 👋";
+    let idx = 0;
+    function type() {
+      if (idx < text.length) {
+        typedText.textContent += text.charAt(idx);
+        idx++;
+        setTimeout(type, 80);
+      }
     }
-  });
-  backToTop.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  });
-</script>
+    document.addEventListener("DOMContentLoaded", type);
+
+    // Back to top
+    const backToTop = document.getElementById("backToTop");
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) backToTop.classList.add("show");
+      else backToTop.classList.remove("show");
+    });
+    backToTop.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+  </script>
 </body>
 </html>
