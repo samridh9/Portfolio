@@ -248,7 +248,7 @@ h2::after {
   25%, 75% { opacity: 0; }
 }
 
-/* Project Cards - FIXED */
+/* Project Cards */
 .project-card {
   background: var(--card-bg);
   backdrop-filter: blur(var(--blur));
@@ -347,6 +347,18 @@ button:hover {
 
 #contact a:hover {
   text-decoration: underline;
+}
+
+/* Contact Form Success Message */
+.success-message {
+  color: green;
+  margin-top: 10px;
+  font-size: 0.95rem;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+.success-message.hidden {
+  display: none;
 }
 
 /* Certifications */
